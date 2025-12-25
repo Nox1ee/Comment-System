@@ -121,7 +121,7 @@ class Comment {
                             <span class="comment__response-btn opacity40">Ответить</span>
                         </div>
                         <div class="comment__like">
-                            <img class="comment__like-img" src="${comment.isFavorite ? '/img/like.svg' : '/img/empty-like.svg'}" alt="">
+                            <img class="comment__like-img" src="${comment.isFavorite ? './img/like.svg' : './img/empty-like.svg'}" alt="">
                             <span class="comment__like-btn opacity40">${comment.isFavorite ? 'В избранном' : 'В избранное'}</span>
                         </div>
                         <div class="comment__rating">
@@ -413,3 +413,4 @@ class Comment {
 }
 export default Comment;
 //# sourceMappingURL=comment.js.map
+
