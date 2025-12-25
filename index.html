@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header"></header>
+    <main class="main">
+        <div class="container">
+            <aside class="main__aside"></aside>
+            <div class="main__content">
+                <section class="main__content-empty">
+                    <div class="block block-1"></div>
+                    <div class="block block-2"></div>
+                    <div class="block block-3"></div>
+                    <div class="block block-4"></div>
+                    <div class="block block-5"></div>
+                    <div class="block block-6"></div>
+                    <div class="block block-7 mobile"></div>
+                    <div class="block block-8 mobile"></div>
+                    <div class="big-block"></div>
+                </section>
+                <section class="main__content-comments">
+                    <div class="comments__btns">
+                        <div class="comments__btns-item active-comments-btn">
+                            <button id="commentsBtn">Комментарии</button>
+                        </div>
+                        <div class="comments__btns-item">
+                            <button id="sortBtn" class="opacity40">По количеству оценок</button>
+                            <img id="sortArrow" src="img/comments-arrow.svg" alt="">
+                            <div id="drop-down">
+                                <span class="drop-down__item opacity40" id="sort-by-date">
+                                    <img class="drop-down__checkmark" src="./img/checkmark.svg" alt="">
+                                    По дате
+                                </span>
+                                <span class="drop-down__item opacity40" id="sort-by-rating">
+                                    <img class="drop-down__checkmark" src="./img/checkmark.svg" alt="">
+                                    По количеству оценок
+                                </span>
+                                <span class="drop-down__item opacity40" id="sort-by-responses">
+                                    <img class="drop-down__checkmark" src="./img/checkmark.svg" alt="">
+                                    По количеству ответов
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="comments__btns-item">
+                            <button id="favoritesBtn" class="opacity40">Избранное</button>
+                            <img src="img/favorites.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="comments__block">
+                        <div class="comments__block-avatar">
+                            <div class="spinner"></div>
+                            <img class="avatar" src="" alt="">
+                        </div>
+                        <div class="comments__block-input">
+                            <div class="comments__input-title">
+                                <div class="comments__block-avatar-mobile">
+                                    <div class="spinner-mobile"></div>
+                                    <img class="avatar-mobile" src="" alt="">
+                                </div>
+                                <span id="name"></span>
+                                <span id="max_symbols">Макс. 1000 символов</span>
+                            </div>
+                            <textarea id="comment-input" placeholder="Введите текст сообщения..."></textarea>
+                        </div>
+                        <div class="comments__block-btn">
+                            <span id="warning">Слишком длинное сообщение</span>
+                            <button id="send" disabled>Отправить</button>
+                        </div>
+                    </div>
+                    <div class="comments__list"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
